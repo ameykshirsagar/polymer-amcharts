@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="polymer-amcharts-date-line">
+    <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+    <script>
+        /**
+         * `polymer-amcharts-date-line`
+         * AmCharts in Polymer 2
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class PolymerAmchartsDateLine extends Polymer.Element {
+            static get is() {
+                return 'polymer-amcharts-date-line';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'polymer-amcharts-date-line'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(PolymerAmchartsDateLine.is, PolymerAmchartsDateLine);
+    </script>
+</dom-module>
